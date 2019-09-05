@@ -6,7 +6,7 @@ references:
       command: "pip install cwltest cwl-runner ruamel.yaml==0.15.97"
     run_test: &run_test
       name: "Run test"
-      command: "cwltest --debug --verbose --test test.yml"
+      command: "cwltest --verbose --test test.yml"
 jobs:
   build:
     # working_directory: /tmp/cwl_test
