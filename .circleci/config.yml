@@ -14,5 +14,7 @@ jobs:
       - image: circleci/python:3.7-buster
     steps:
       - checkout
+      - setup_remote_docker
+        docker_layer_caching: true
       - run: *install_cwl_runner
       - run: *run_test
