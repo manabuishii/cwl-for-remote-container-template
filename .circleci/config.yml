@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 references:
   commands:
     install_cwl_runner: &install_cwl_runner
