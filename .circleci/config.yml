@@ -15,5 +15,6 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
+        version: 18.06.0-ce
       - run: *install_cwl_runner
       - run: *run_test
