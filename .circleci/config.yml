@@ -1,4 +1,4 @@
-version: 2.1
+version: 2
 references:
   commands:
     install_cwl_runner: &install_cwl_runner
@@ -11,10 +11,9 @@ jobs:
   build:
     # working_directory: /tmp/cwl_test
     docker:
-      - image: circleci/python:3.7-buster
+      - image: python:3.7-buster
     steps:
       - checkout
       - setup_remote_docker
-        version: 18.06.0-ce
       - run: *install_cwl_runner
       - run: *run_test
